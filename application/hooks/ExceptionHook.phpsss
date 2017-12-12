@@ -1,0 +1,51 @@
+<?php
+
+class ExceptionHook extends Exception {
+
+    public function SetExceptionHandler() {
+        set_error_handler(array($this, 'ourMagicErrorHandler'));
+        set_exception_handler(array($this, 'HandleExceptions'));
+    }
+
+    public function HandleExceptions($exception) {
+        $msg = 'Exception of type \'' . get_class($exception) . '\' occurred with Message: ' . $exception->getMessage() . ' in File ' . $exception->getFile() . ' at Line ' . $exception->getLine();
+        $msg .= "\r\n Backtrace \r\n";
+        $msg .= $exception->getTraceAsString();
+        log_message('error', "\n================================================\n" . json_encode($msg) . "\n================================================\n", TRUE);
+        mail('rkchaudhary123@gmail.com', 'An Exception Occurred', $msg, 'From: rudresh.kumar@appinventiv.com');
+        $CI = & get_instance();
+        $CI->load->helper('url');
+        $module = $CI->uri->segment(1);
+        if ($module == 'api') {
+            $CI->response(array('CODE' => MISSING_PARAMETER, 'MESSAGE' => json_encode($msg)));
+        } else {
+            echo 'Internal server error...';
+            //$this->Error_page();
+        }
+    }
+
+    public function ourMagicErrorHandler($error_level, $error_string, $error_file, $error_line, $error_context) {
+        $lasterror = error_get_last();
+        if (in_array($lasterror['type'], Array(E_ERROR, E_CORE_ERROR, E_COMPILE_ERROR, E_USER_ERROR, E_RECOVERABLE_ERROR, E_CORE_WARNING, E_COMPILE_WARNING, E_PARSE))) {
+            throw new ErrorException($error_string, 0, $error_level, $error_file, $error_line);
+            return true;
+        }else{
+            throw new ErrorException($error_string, 0, $error_level, $error_file, $error_line);
+            return true;
+        }
+    }
+
+    public function Error_page() {
+        $CI = & get_instance();
+        $CI->load->library('session');
+        $session = $CI->session->userdata('user_login');
+        if (isset($session) && !empty($session)) {
+            $CI->load->helper('url');
+            redirect('merchant/store/show_404');
+        } else {
+            $CI->load->helper('url');
+            redirect('merchant/login/show_404');
+        }
+    }
+
+}

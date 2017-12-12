@@ -1,0 +1,383 @@
+@media only screen and (min-width : 1700px){
+    .container {
+        width: 1470px;
+    }
+}
+    
+
+
+
+@media only screen and (max-width : 1200px){
+    .top-brand-wrap a {
+        width: 150px;
+    }
+    .view-tips-odd-col ul li .bit-btn {
+        font-size: 12px;
+        padding: 6px 6px;
+    }
+    .view-tips-odd-col ul li .view-od-tps-btn {
+        font-size: 12px;
+        padding: 6px 6px;
+    }
+    .betslip-btn-wrap {
+        float: right;
+        width: 14%;
+    }
+}
+
+
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .top-brand-wrap a {
+        width: 110px;
+    }
+    select.form-control.select-odds {
+        font-size: 12px;
+    }
+    .top-menu-wrap ul li a {
+        font-size: 12px;
+    }
+    .top-menu-wrap ul li {
+        margin: 0px 2px 0 7px;
+    }
+    .log-signup-srch-wrap .lss-wrap ul li a {
+         font-size: 12px;
+    }
+    .log-signup-srch-wrap .lss-wrap ul li {
+         margin: 4px 4px 0 4px;
+    }
+    .top-menu-wrap {
+        float: left;
+        margin: 2px 0 0 18px;
+    }
+    .betslip-btn-wrap {
+        width: 20%;
+    }
+    .wk-time-game-col {
+        width: 40%;
+    }
+    .team-vsgame-col {
+        width: 60%;
+    }
+    .view-tips-odd-col {
+        width: 100%;
+    }
+    .team-vsgame-col .team-name {
+        font-size: 13px;
+    }
+    .team-vsgame-col .vs {
+        font-size: 12px;
+    }
+    .view-tips-odd-col ul li .view-od-tps-btn {
+        font-size: 12px;
+        padding: 4px 6px;
+        border-radius: 2px;
+    }
+    .view-tips-odd-col ul li .bit-btn {
+        font-size: 12px;
+        background: #d9cd1a;
+        color: #212121;
+        font-weight: 500;
+        padding: 4px 13px;
+        border-radius: 2px;
+    }
+    .footer-wrap {
+        padding: 5px 0;
+    }
+
+    .download-app-bttn-wrap ul li {
+        display: inline-block;
+        padding: 0;
+        margin: 0 8px 0 0;
+    }
+    .download-app-bttn-wrap ul li a {
+        width: 88px;
+        display: block;
+    }
+    .download-app-bttn-wrap ul li a img {
+        width: 100%;
+    }
+    .tnc-wrap {
+        float: left;
+        margin: 8px 0 0 0;
+    }
+    .follow-wrap {
+        margin: 0 0 0 0;
+    }
+    .follow-wrap ul li {
+        margin: 0 10px;
+     }
+     .header.weekly-game h2.heading {
+        font-size: 22px;
+        margin: 5px 0 5px 0;
+        padding: 0;
+    }
+    .freetip-title {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+
+}
+
+
+@media (max-width : 766px){
+ 
+    .data-wrap {
+        position: relative;
+        min-height: 100%;
+        padding: 150px 0 840px 0;
+        width: 100%;
+    }
+       
+
+.top-menu-wrap {
+    float: left;
+    margin: 0 0 0 0px;
+    position: fixed;
+    height: 100%;
+    background: #003c27;
+    z-index: 99;
+    left: -250px;
+    top: 0;
+    -webkit-transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+    transition:         all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.top-menu-wrap-show {
+    left: 0;
+    width: 201px;
+    padding: 7px 0 0 0;
+}
+.top-menu-wrap ul li {
+    margin: 10px 9px 15px 10px;
+}
+
+.top-menu-wrap ul li {
+    display: list-item;
+}
+.toggle-wrap {
+    display: block;
+}
+.close-nave-top {
+    display: block;
+}
+.betslip-btn-wrap {
+    float: right;
+    width: 20%;
+}
+.game-bet-col {
+    width: 100%;
+}
+.add-freetip-col {
+    float: right;
+    width: 100%;
+}
+
+}
+
+
+@media screen and (min-width : 320px) and (max-width : 640px) {
+
+.top-brand-wrap a {
+        width: 100px;
+    }
+
+.log-signup-srch-wrap .lss-wrap ul li {
+         margin: 0 4px 0 4px;
+    }   
+.log-signup-srch-wrap .lss-wrap ul li a {
+        display: block;
+        font-size: 12px;
+    }
+
+.inner-game-bet-col {
+        padding: 5px 0 0;
+}
+
+
+footer .left-col {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+
+
+footer  .right-col {
+        float: right;
+        width: 100%;
+        text-align: center;
+}
+.tnc-wrap {
+    width: 100%;
+}
+
+.follow-wrap {
+    width: 100%;
+}
+
+.header.weekly-game h2.heading {
+    font-size: 18px;
+}
+
+.wk-time-game-col {
+    width: 100%;
+}
+.team-vsgame-col {
+     width: 100%;
+    padding: 2px 0 0 10px;
+}
+.view-tips-odd-col > ul > li {
+    display: inline-block;
+    margin: 5px 4px;
+}
+
+.view-tips-odd-col{
+    width: 100%;
+}
+.view-tips-odd-col > ul{
+    width: 100%;
+}
+
+.team-vsgame-col .team-name {
+    font-size: 12px;
+}
+.team-vsgame-col .vs {
+    font-size: 11px;
+}
+
+.view-tips-odd-col ul li .view-od-tps-btn {
+    font-size: 10px;
+    
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: 300;
+}
+
+.view-tips-odd-col ul li .bit-btn {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 2px;
+}
+.tip-content-smcol p {
+    font-size: 12px;
+}
+.freetip-list-wrap ul li .time {
+    font-size: 11px;
+}
+.freetip-list-wrap ul li figure {
+    width: 50px;
+    height: 50px;
+}
+.sport-nav-menu {
+    float: left;
+    width: 65%;
+}
+
+.betslip-btn-wrap {
+    width: 29%;
+    margin: 18px 0 0 0;
+}
+
+.sport-nav-menu a .sport-icon {
+    width: 24px;
+    height: 24px;
+}
+.sport-nav-menu a .sports-name {
+    font-size: 12px;
+}
+
+.betslip-btn-wrap a {
+    font-size: 11px;
+    padding: 3px;
+}
+.betslip-btn-wrap a .digit {
+    background: transparent;
+    color: #245d39;
+    font-size: 10px;
+    border-radius: none;
+    width: auto;
+    height: auto;
+    padding: 2px 0 0 0;;
+    margin: 0 0 0 2px;
+}
+.nav-sports-nav {
+    padding: 8px 0;
+}
+
+
+
+.slider-banner-wrap .owl-prev, .slider-banner-wrap .owl-next {
+    width: 20px;
+    height: 20px;
+}
+
+.log-sign-modal-header figure {
+    width: 150px;
+}
+.log-sign-heading {
+    font-size: 15px;
+}
+
+.slider-banner-wrap .owl-prev .fa-angle-left, .slider-banner-wrap .owl-next .fa-angle-right {
+     font-size: 15px;
+}
+.form-field-wrap {
+    margin: 0 0 15px 0;
+    padding: 0 10px;
+}
+.login-fa-gp-tw ul li a .txt {
+    display: none;
+}
+.login-fa-gp-tw ul{
+    text-align: center;
+}
+.login-fa-gp-tw ul li a .facebook, .login-fa-gp-tw ul li a .googleplus, .login-fa-gp-tw ul li a .twitter {
+    margin: 0 auto;
+}
+.login-fa-gp-tw ul li a {
+    padding: 6px 9px;
+    font-size: 13px;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+}
+
+.search-header {
+    width: 15px;
+    height: 15px;
+}
+.add-block-wrap {
+    padding: 0;
+    display: none;
+}
+.slider-banner-wrap {
+    margin: 15px 0 0;
+}
+.cross.close-nave-top {
+    z-index: 999;
+}
+
+
+.search-result-wrap {
+    width: 96%;
+    background: #ededed;
+    top: 48px;
+    right: 6px;
+    z-index: 99;
+    padding: 10px;
+}
+.search-box-btn ul li {
+    display: inline-block;
+    width: 56%;
+}
+.search-list-wrap > ul > li > a .team-sports-wrap span.title {
+    font-size: 13px;
+}
+
+.search-list-wrap > ul > li > a .team-sports-wrap span.team {
+    font-size: 10px;
+}
+
+
+}

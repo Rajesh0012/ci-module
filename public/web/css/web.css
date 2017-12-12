@@ -1,0 +1,12 @@
+.error{
+    color:#ff8787;
+}
+.not_found{
+
+
+
+    position: absolute;
+    color: white;
+    font-size: medium;
+    left: 368px;
+}
